@@ -1,0 +1,235 @@
+
+/*------------------BODY----------------*/
+
+body {
+	
+	
+	
+	font-size: medium;
+	
+	font-family: verdana, sans-serif, arial;
+	margin: 0px;
+/*        background-color: #EEFFFF; */
+}
+
+
+	a {
+	        font-size: medium;
+		color: #780000;
+	}
+
+	
+		a:focus, a:active, a:hover {
+			color: #EEFFFF; 
+			background-color: #780000;
+		}
+	
+
+
+img {
+	border: 0px;
+}
+
+hr {
+	border: 0px;
+	color: #000000;
+	background-color: #000000;
+	height: 1px;
+	line-height: 1px;
+	/* border-bottom: 1px solid #000000; */
+}
+
+form {
+	margin: 0px;
+}
+
+input, select, td {
+	
+	
+		font-size: medium;
+	
+}
+
+/*---------------HEADERS---------------*/
+
+.sec {border-top: 1px solid #000000; background-color: #5B1E31; border-bottom: 1px solid #004457;}
+.sub {background-color: #C2DDE5;}
+.highlight {border-top: 1px solid #C5F1FE; border-bottom: 1px solid #93ABBC;}
+.link {color: #003366;}
+
+
+.header TD, .header TR {
+	background-repeat: repeat-x;
+}                
+
+.row {
+	padding-left: 5px;
+	font-weight: bold;
+	color: #EEFFFF;
+}
+
+/*----------SPECIAL SECTIONS----------*/
+
+.ad {
+	background-color:#000000;
+	color: #FFFFFF;
+}
+
+.sponsored {
+	background-color: #EBEBEB;
+}
+
+.breaking {
+	background-color: #252525;
+	padding-left: 5px;
+}
+
+.bottom {
+	border-top: 1px solid #666666; 
+	background-color: #252525; 
+	border-bottom: 1px solid #000000;
+}
+
+.jump {
+	
+	
+		padding-left: 2px;
+		border-left: 1px solid #666666;
+	
+}
+
+.dyk { 
+	background-color: #666666;
+	border-bottom: 1px solid #333333;
+}
+
+
+/*---------------STYLES--------------*/
+
+.ind {
+	padding-left: 5px;
+}
+
+.inline {
+	display: inline;
+}
+
+.big {
+	font-size:1.5em;
+}
+
+.more {
+	margin-top: 5px;	
+}
+
+.bold, .headline, .sprint  {
+	font-weight: bold;
+}
+
+.nw {
+	white-space: nowrap;
+}
+
+.wrong {
+	text-decoration: line-through;
+}
+
+.alt {
+	white-space: nowrap;
+	background-color:#F3F3F3;
+}
+
+.lightBG {
+	background-color: #D7D7D7;
+}
+
+.shade {
+	background-color: #EEEEEE;
+}
+
+.tL {
+	border-bottom: 1px solid #CFCFCF;
+}
+
+.wide, .table {
+	width:100%;
+	
+	
+	
+		font-size: medium;
+	
+}
+
+/*---------------COLORS--------------*/
+
+.gray {
+	color: #333333;
+}
+
+.red, .sprintFooterLink {
+	color: #FF0000;
+}
+
+.green {
+	color: #009900;
+}
+
+.white, .adAdLink {
+	color: #EEFFFF;
+}
+
+/*-------------ALIGNMENT------------*/
+
+.left {
+	text-align: left;
+}
+
+.center, .sprint {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+/*-- new iphone adjusted ---*/
+
+/*.headline, .subHead, .game {
+	
+}*/
+
+.dykHeader { 
+	background-color: #666666;
+	border-bottom: 1px solid #333333;
+	padding-left: 5px;
+	font-weight: bold;
+	color: #EEFFFF;
+}
+
+.dykBody {
+	padding-left: 5px;
+	background-color: #D7D7D7;
+}
+
+.sub {
+	font-weight: bold;
+	padding-left: 5px;
+}
+
+.noaddiv {
+	font-size: 1px;
+	height: 0px;
+	width: 0px;
+}
+
+.VGfooter      { color: #000000; font-size: 10pt }    
+.VGfooterBox   { color: #000000; background-color: #E8E8E8; } 
+.HEfooter      { color: #000000; font-size: 4.5pt }
+.HEfooterBox   { color: #000000; background-color: #E6ECF3; }
+.HEfooterImage {
+      background-repeat: no-repeat;
+      background-position: left;
+      background-image: url(http://home.helio.com:6000/images/wapimg/footer_icon.gif);
+      background-color: #E6ECF3;
+}
+
