@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<content collectionGUID="2CFD985C-63C7-49F6-A673-CC5D3D100E03">
+  <lastEdited clientType="local-build-20090529" date="2009-05-29 20:34:55 -0400"/>
+  <textBox id="generic-title-attributes" dynamic="no" visible="yes">
+    <richText>Savannah Trip</richText>
+  </textBox>
+  <textBox id="generic-body-attributes" dynamic="no" visible="yes">
+    <richText>We bought a mini-van on Saturday and decided to break it in with a 2-day trip to Savannah and Tybee Island.</richText>
+  </textBox>
+  <textBox id="generic-datefield-attributes" dynamic="no" visible="yes">
+    <richText>&lt;b&gt;Sunday, May 24, 2009&lt;/b&gt;</richText>
+  </textBox>
+  <image id="generic-picture-attributes" dynamic="no" visible="yes" src="24_Savannah_Trip_files/shapeimage_2.jpg" left="0px" top="0px" width="288px" height="216px"/>
+</content>

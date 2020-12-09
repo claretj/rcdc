@@ -43,7 +43,7 @@ function view($start_monday){
 
 
     $sql="SELECT c.descr course_descr, run.distance, run.time_sec, run.comments ".
-        "FROM run, course c ".
+        "FROM claret.run, claret.course c ".
         "WHERE run.rundate = '".date('Y-m-d',$this_date)."' ".
         "AND run.course_id = c.id ";
     $query = $this->db->query($sql);

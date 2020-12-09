@@ -52,12 +52,11 @@ $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = '';
 $db['default']['password'] = '';
 $db['default']['database'] = '';
-*/
-$db['default']['hostname'] = "localhost";
-$db['default']['username'] = "claretj";
-$db['default']['password'] = "";
-$db['default']['database'] = "claret";
 
+$db['default']['hostname'] = "aatfod77uay5y4.c9ag6ub0kehf.us-east-1.rds.amazonaws.com";
+$db['default']['username'] = "claretj";
+$db['default']['password'] = "0%D3t4yn";
+$db['default']['database'] = "";
 
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
@@ -70,7 +69,29 @@ $db['default']['dbcollat'] = 'utf8_general_ci';
 $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
+*/
 
+$db['default'] = array(
+    'dsn'   => '',
+    'hostname' => 'aatfod77uay5y4.c9ag6ub0kehf.us-east-1.rds.amazonaws.com',
+    'username' => 'claretj',
+    'password' => '0%D3t4yn',
+    'database' => '',
+    'dbdriver' => 'mysqli',
+    'dbprefix' => '',
+    'pconnect' => FALSE,
+    'db_debug' => (ENVIRONMENT !== 'production'),
+    'cache_on' => FALSE,
+    'cachedir' => '',
+    'char_set' => 'utf8',
+    'dbcollat' => 'utf8_general_ci',
+    'swap_pre' => '',
+    'encrypt' => FALSE,
+    'compress' => FALSE,
+    'stricton' => FALSE,
+    'failover' => array(),
+    'save_queries' => TRUE
+);
 
 /* End of file database.php */
 /* Location: ./application/config/database.php */

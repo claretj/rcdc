@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<rss xmlns:iweb="http://www.apple.com/iweb" version="2.0">
+  <channel>
+    <title>Blog</title>
+    <link>file://localhost/Users/mdctga-itunes/Sites/Ray/Blog</link>
+    <description>Here&#x2019;s some fun stuff I&#x2019;ve done with my family.</description>
+    <item>
+      <title>Savannah Trip</title>
+      <link>file://localhost/Users/mdctga-itunes/Sites/Ray/Blog/Entries/2009/5/24_Savannah_Trip.html</link>
+      <guid isPermaLink="false">1f31610b-4d4c-40fa-9dc9-1745601fb7b5</guid>
+      <pubDate>Sun, 24 May 2009 03:37:36 -0400</pubDate>
+      <iweb:comment link="file://localhost/Users/mdctga-itunes/Sites/Ray/Blog/Entries/2009/5/24_Savannah_Trip.html#comment_layer" count="0" enabled="0"></iweb:comment>
+    </item>
+    <iweb:dateFormat>EEEE, MMMM d, yyyy</iweb:dateFormat>
+    <iweb:baseURL>file://localhost/Users/mdctga-itunes/Sites/Ray/Blog</iweb:baseURL>
+    <iweb:maximumSummaryItems>5</iweb:maximumSummaryItems>
+  </channel>
+</rss>

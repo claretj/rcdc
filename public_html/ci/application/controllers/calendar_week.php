@@ -36,7 +36,7 @@ function view($monday){
 
 
     $sql="SELECT c.descr course_descr, rt.descr rt_descr, run.distance, run.time_sec, run.comments ".
-        "FROM run, course c, run_type rt ".
+        "FROM claret.run, claret.course c, claret.run_type rt ".
         "WHERE run.rundate = '".date('Y-m-d',$this_date)."' ".
         "AND run.run_type_id=rt.id ".
         "AND run.course_id = c.id ";

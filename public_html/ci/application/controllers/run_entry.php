@@ -25,13 +25,13 @@ function post_entry(){
   $distance=$_POST['distance'];
 
   //delete row with that date
-  $this->db->query("delete from run where rundate='".$date."'");
+  $this->db->query("delete from claret.run where rundate='".$date."'");
 
   //insert new row with that date
   if ($distance>0){
-    $hours=$_POST['hours'];
-    $minutes=$_POST['minutes'];
-    $seconds=$_POST['seconds'];
+    $hours=$_POST['hours']||0;
+    $minutes=$_POST['minutes']||0;
+    $seconds=$_POST['seconds']||0;
     $time_sec=$hours*3600+$minutes*60+$seconds;
     if ($hours==0){$hours="";}
     $seconds=str_pad($seconds, 2, "0", STR_PAD_LEFT);
@@ -39,7 +39,7 @@ function post_entry(){
     $comments=$_POST['comments'];
     $run_type_id=$_POST['run_type_id'];
     $shoe_id=$_POST['shoe_id'];
-    $sql_string="insert into run (rundate,distance,time_sec,course_id,comments,run_type_id,shoe_id) ".
+    $sql_string="insert into claret.run (rundate,distance,time_sec,course_id,comments,run_type_id,shoe_id) ".
       "values ('".$date."',".$distance.",".$time_sec.",".$course_id.", '". 
       $comments."',".$run_type_id.", ".
       $shoe_id."); ";
@@ -51,7 +51,7 @@ function post_entry(){
 }
 
 function view($date){
-  $sql_string="select * from run where rundate='".$date."' ";
+  $sql_string="select * from claret.run where rundate='".$date."' ";
   $query = $this->db->query($sql_string);
 
   if ($query->num_rows() > 0){
@@ -95,7 +95,7 @@ function view($date){
 
 function get_dropdowns(&$course_arr,&$run_type_arr,&$shoe_arr,$shoe_id){
   $sql_string="SELECT course.id, course.descr, max( rundate ) ".
-  "FROM course, run ".
+  "FROM claret.course, claret.run ".
   "WHERE course.id = run.course_id ".
   "AND course.status = 'A' ".
   "GROUP BY course.id ".
@@ -104,20 +104,20 @@ function get_dropdowns(&$course_arr,&$run_type_arr,&$shoe_arr,$shoe_id){
   $course_arr=$query->result_array();
 
   $sql_string="SELECT rt.id, rt.descr ".
-  "FROM run_type rt ".
+  "FROM claret.run_type rt ".
   "ORDER BY sort_order asc ";
   $query = $this->db->query($sql_string);
   $run_type_arr=$query->result_array();
 
   $sql_string="SELECT shoe.id, shoe.descr, max( rundate ) end ".
-  "FROM shoe, run ".
+  "FROM claret.shoe, claret.run ".
   "WHERE shoe.id = run.shoe_id ".
   "AND shoe.status = 'A' ".
   "GROUP BY shoe.id ".
-  "union select id,descr,null from shoe where id not in (select shoe_id from run)  and shoe.status='A' ";
+  "union select id,descr,null from claret.shoe where id not in (select shoe_id from claret.run) and shoe.status='A' ";
   if (!empty($shoe_id)){
   $sql_string=$sql_string." union SELECT shoe.id, shoe.descr, max( rundate ) ".
-  " FROM shoe, run ".
+  " FROM claret.shoe, claret.run ".
   " WHERE shoe.id = ".$shoe_id.
   " AND shoe.status = 'I' ".
   " GROUP BY shoe.id ";

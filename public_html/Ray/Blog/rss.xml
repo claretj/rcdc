@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:iweb="http://www.apple.com/iweb" version="2.0">
+  <channel>
+    <title>Ray’s Blog</title>
+    <link>file://localhost/Users/mdctga-itunes/Sites/Ray/Blog/Blog.html</link>
+    <description>Here’s some fun stuff I’ve done with my family.</description>
+    <generator>iWeb 2.0.4</generator>
+    <image>
+      <url>file://localhost/Users/mdctga-itunes/Sites/Ray/Blog/Blog_files/P5090032.jpg</url>
+      <title>Ray’s Blog</title>
+      <link>file://localhost/Users/mdctga-itunes/Sites/Ray/Blog/Blog.html</link>
+    </image>
+    <item>
+      <title>Savannah Trip</title>
+      <link>file://localhost/Users/mdctga-itunes/Sites/Ray/Blog/Entries/2009/5/24_Savannah_Trip.html</link>
+      <guid isPermaLink="false">1f31610b-4d4c-40fa-9dc9-1745601fb7b5</guid>
+      <pubDate>Sun, 24 May 2009 03:37:36 -0400</pubDate>
+      <description>&lt;a href=&quot;file://localhost/Users/mdctga-itunes/Sites/Ray/Blog/Entries/2009/5/24_Savannah_Trip_files/DSC03602.jpg&quot;&gt;&lt;img src=&quot;file://localhost/Users/mdctga-itunes/Sites/Ray/Blog/Media/DSC03602.jpg&quot; style=&quot;float:left; padding-right:10px; padding-bottom:10px; width:183px; height:137px;&quot;/&gt;&lt;/a&gt;We bought a mini-van on Saturday and decided to break it in with a 2-day trip to Savannah and Tybee Island.</description>
+      <enclosure url="file://localhost/Users/mdctga-itunes/Sites/Ray/Blog/Entries/2009/5/24_Savannah_Trip_files/DSC03602.jpg" length="246240" type="image/jpeg"/>
+    </item>
+  </channel>
+</rss>
