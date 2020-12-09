@@ -47,29 +47,6 @@
 
 $active_group = 'default';
 $active_record = TRUE;
-/*
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = '';
-$db['default']['password'] = '';
-$db['default']['database'] = '';
-
-$db['default']['hostname'] = "aatfod77uay5y4.c9ag6ub0kehf.us-east-1.rds.amazonaws.com";
-$db['default']['username'] = "claretj";
-$db['default']['password'] = "0%D3t4yn";
-$db['default']['database'] = "";
-
-$db['default']['dbdriver'] = 'mysql';
-$db['default']['dbprefix'] = '';
-$db['default']['pconnect'] = TRUE;
-$db['default']['db_debug'] = TRUE;
-$db['default']['cache_on'] = FALSE;
-$db['default']['cachedir'] = '';
-$db['default']['char_set'] = 'utf8';
-$db['default']['dbcollat'] = 'utf8_general_ci';
-$db['default']['swap_pre'] = '';
-$db['default']['autoinit'] = TRUE;
-$db['default']['stricton'] = FALSE;
-*/
 
 $db['default'] = array(
     'dsn'   => '',
