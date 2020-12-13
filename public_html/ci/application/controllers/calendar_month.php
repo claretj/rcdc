@@ -26,7 +26,7 @@ function view_date(){
 function view($start_monday){
 
  $month_arr=array();
- for ($iWeek=11; $iWeek>=0; $iWeek--){
+ for ($iWeek=20; $iWeek>=0; $iWeek--){
   $monday=$start_monday- $iWeek*7*86400;
   $week_distance=0;
   for ($i=0; $i<=6; $i++) {

@@ -29,12 +29,15 @@ function post_entry(){
 
   //insert new row with that date
   if ($distance>0){
-    $hours=$_POST['hours']||0;
-    $minutes=$_POST['minutes']||0;
-    $seconds=$_POST['seconds']||0;
+    $hours=$_POST['hours'];
+    $minutes=$_POST['minutes'];
+    $seconds=$_POST['seconds'];
+    if ($hours==NULL){$hours="0";}
+    if ($minutes==NULL){$minutes="0";}
+    if ($seconds==NULL){$seconds="0";}
     $time_sec=$hours*3600+$minutes*60+$seconds;
-    if ($hours==0){$hours="";}
-    $seconds=str_pad($seconds, 2, "0", STR_PAD_LEFT);
+    if ($hours==NULL){$hours="";}
+    //$seconds=str_pad($seconds, 2, "0", STR_PAD_LEFT);
     $course_id=$_POST['course_id'];
     $comments=$_POST['comments'];
     $run_type_id=$_POST['run_type_id'];
