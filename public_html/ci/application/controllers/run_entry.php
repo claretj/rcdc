@@ -10,6 +10,7 @@ function __construct() {
 }
 
 function view_today(){
+  date_default_timezone_set("America/New_York");
   $date=date("Y-m-d");
   $this->view($date);
 }

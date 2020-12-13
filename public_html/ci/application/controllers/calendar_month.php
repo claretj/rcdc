@@ -13,6 +13,7 @@ function index(){
 }
 
 function view_this(){
+  date_default_timezone_set("America/New_York");
   $monday=time() - (date('N')-1)*86400;
   $this->view($monday);
 }
@@ -25,6 +26,7 @@ function view_date(){
 
 function view($start_monday){
 
+ date_default_timezone_set("America/New_York");
  $month_arr=array();
  for ($iWeek=20; $iWeek>=0; $iWeek--){
   $monday=$start_monday- $iWeek*7*86400;
